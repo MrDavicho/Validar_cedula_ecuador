@@ -20,4 +20,4 @@ def verificar_cedula(cedula=""):
     return ultimo_digito == complemento
 
 # Prueba con la cédula proporcionada
-print(verificar_cedula("0705829393"))
+print(verificar_cedula("0712859895"))
