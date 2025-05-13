@@ -11,7 +11,7 @@ def verificar_cedula(cedula=""):
     resultado = []
     for i, (digito, mult) in enumerate(zip(ced_array, multiplicador)):
         producto = digito * mult
-        resultado.append(producto - 9 if producto >= 10 else producto)
+        resultado.append(producto - 9 if producto >= 9 else producto)
     
     suma = sum(resultado)
     siguiente_decena = math.ceil(suma / 10) * 10
